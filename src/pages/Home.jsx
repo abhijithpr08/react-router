@@ -1,9 +1,12 @@
-import React from 'react'
+import { Link } from "react-router-dom";
 
-const Home = () => {
+export default function Home() {
   return (
-    <div>Home</div>
-  )
+    <div>
+      <h2>Home</h2>
+      <Link to="/about">About</Link> |{" "}
+      <Link to="/dashboard">Dashboard</Link> |{" "}
+      <Link to="/user/123">User 123</Link>
+    </div>
+  );
 }
-
-export default Home
